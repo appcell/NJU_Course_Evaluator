@@ -1,0 +1,13 @@
+{ 
+	"name": "NJU评课小助手", 
+	"version": "1.0",
+	"manifest_version": 2, 
+	"description": "给懒人的评课插件，全优~",
+	"content_scripts": 
+	[ { 
+	"js": ["NJUCourseEvaluator.js"], 
+	"matches": [ "http://desktop.nju.edu.cn:8080/jiaowu/student/evalcourse/courseEval.do?method=currentEvalCourse","http://jwas.nju.edu.cn:8080/jiaowu/student/evalcourse/courseEval.do?method=currentEvalCourse"], 
+	"run_at": "document_end" 
+	} ] 
+
+}
